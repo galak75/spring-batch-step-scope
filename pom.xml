@@ -58,6 +58,32 @@
         </dependency>
 
     </dependencies>
+   <build>
+        <plugins>
+            <plugin> 
+                <artifactId>maven-compiler-plugin</artifactId> 
+		        <configuration>
+		          <source>1.7</source>
+		          <target>1.7</target>
+        			</configuration>
+            </plugin>
+        </plugins>
+    </build>
 
+    <repositories>
+        <repository>
+            <id>spring-snapshots</id>
+            <url>http://repo.spring.io/libs-snapshot</url>
+            <snapshots><enabled>true</enabled></snapshots>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>spring-snapshots</id>
+            <url>http://repo.spring.io/libs-snapshot</url>
+            <snapshots><enabled>true</enabled></snapshots>
+        </pluginRepository>
+    </pluginRepositories>
 
 </project>
